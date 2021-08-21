@@ -1,8 +1,8 @@
-import Title from "./components/Title";
+import Header from "./components/Header";
 function App() {
   return (
     <>
-      <Title />
+      <Header />
     </>
   );
 }
