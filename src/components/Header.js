@@ -2,16 +2,16 @@ import "./Header.css";
 import hero from "../img/hero.png";
 export default function Header() {
   return (
-    <header>
+    <header className="container">
       <div className="hero-img">
         <img src={hero} alt="Avatar" />
       </div>
       <div className="hero-content">
-        <h1>We make it happen</h1>
+        <h1>Welcome to my Portfolio 👋</h1>
         <div className="hero-nav">
           <a href=".">Projects</a>
           <a href=".">About</a>
-          <a href=".">Contact</a>
+          <a href=".">Github</a>
         </div>
       </div>
       <p className="text">

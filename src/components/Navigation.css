@@ -3,6 +3,7 @@ nav {
   top: 25px;
   left: 20px;
   right: 20px;
+  z-index: 20;
 }
 .menu-button {
   margin-left: auto;
