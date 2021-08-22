@@ -1,20 +1,21 @@
-header > .container {
-  padding-top: 100px;
+header {
+  padding: 100px 20px 0px 20px;
 }
 .hero-img {
   width: 240px;
   height: 240px;
   margin: 0 auto;
 }
-.hero-nav {
-  display: flex;
-  flex-direction: column;
-}
-.hero-h1 {
+.hero-content > h1 {
   font-size: 17px;
   font-weight: 400;
   letter-spacing: -0.03em;
-  margin: 47px 0px 5px 0px;
+  margin-top: 47px;
+  margin-bottom: 3px;
+}
+.hero-nav {
+  display: flex;
+  flex-direction: column;
 }
 .hero-nav > a {
   font-size: 38px;
@@ -23,59 +24,144 @@ header > .container {
   letter-spacing: -0.05em;
   position: relative;
   width: fit-content;
-  padding: 6px 11px 6px 0px;
-  margin-bottom: 4px;
+  padding: 8px 11px 8px 0px;
 }
 .hero-nav > a::after {
   content: "";
-  display: block;
   position: absolute;
   left: 2px;
   right: 13px;
-  bottom: 6px;
+  bottom: 8px;
   height: 1px;
   background: black;
 }
-.hero-text {
-  margin-top: 39px;
-  font-size: 20px;
-  line-height: 155%;
-  letter-spacing: 0.00464286em;
+header > .text {
+  margin-top: 41px;
 }
+/* first small jump */
 @media (min-width: 360px) {
+  header {
+    padding: 100px 30px 0px 30px;
+  }
   .hero-nav > a {
     font-size: 42px;
     line-height: 52px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
-  .hero-text {
-    margin-top: 35px;
+  header > .text {
+    margin-top: 37px;
   }
 }
-
-@media (min-width: 768px) and (min-height: 550px) {
-  header > .container {
-    padding-top: 127px;
+/* still vertical tablet */
+@media (min-width: 768px) {
+  header {
+    padding: 127px 100px 0px 100px;
   }
   .hero-img {
     width: 347px;
     height: 347px;
   }
-  .hero-h1 {
-    margin: 97px 0px 6px 0px;
+  .hero-content > h1 {
+    margin: 97px 0px 4px 0px;
     font-size: 18px;
   }
   .hero-nav > a {
     font-size: 60px;
     line-height: 65px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
-  .hero-text {
-    margin-top: 27px;
+  header > .text {
+    margin-top: 29px;
+  }
+}
+/* horizontal swap */
+@media (min-width: 1024px) {
+  header {
+    padding: 150px 120px 0px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .hero-img {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto 0 0;
+  }
+  .hero-content {
+    width: 50%;
+  }
+  .hero-content > h1 {
+    margin: 0;
+  }
+  header > .text {
+    max-width: 645px;
+    margin-top: 45px;
+  }
+}
+/* first pc */
+@media (min-width: 1200px) {
+  header {
+    padding: 0px 150px 0px 150px;
+  }
+  .hero-img {
+    display: none;
+  }
+  .hero-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-content > h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .hero-nav > a {
+    font-size: 6.66667vw;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    color: transparent;
+    text-shadow: none;
+    -webkit-text-stroke: 1px #000;
+    transition: color 0.3s, -webkit-text-stroke 0.3s;
+  }
+  .hero-nav > a:hover {
+    color: #000;
+    -webkit-text-stroke: 1px transparent;
+  }
+  .hero-nav > a::after {
+    background: transparent;
+  }
+  header > .text {
+    max-width: 825px;
+    font-size: 30px;
+    line-height: 135%;
+    position: relative;
+    top: -130px;
+  }
+}
+/* small jump for pc */
+@media (min-width: 1350px) {
+  header {
+    padding: 0px 180px 0px 180px;
   }
 }
 
-@media (min-width: 1024px) {
-  .hero-img {
+@media (min-width: 1600px) {
+  header {
+    padding: 0px 270px 0px 270px;
+  }
+  .hero-content > h1 {
+    font-size: 1.25vw;
+  }
+  header > .text {
+    font-size: 1.875vw;
+    max-width: 52vw;
   }
 }

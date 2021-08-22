@@ -1,10 +1,11 @@
 import Header from "./components/Header";
-function App() {
+import Navigation from "./components/Navigation";
+
+export default function App() {
   return (
     <>
+      <Navigation />
       <Header />
     </>
   );
 }
-
-export default App;
