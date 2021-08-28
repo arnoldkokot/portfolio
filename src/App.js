@@ -1,15 +1,23 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Navigation from "./components/Navigation";
-import Projects from "./components/Projects";
-
+import Navigation from "./Navigation";
 export default function App() {
   return (
     <>
       <Navigation />
-      <Header />
-      <Projects />
-      <Footer />
+      <header>
+        <div className="container">Header</div>
+      </header>
+      <main>
+        <div className="container">
+          <h1>H1 Text</h1>
+          <h2>H2 Text</h2>
+          <h3>H3 Text</h3>
+          <p>Paragraph</p>
+          <a href=".">Link</a>
+        </div>
+      </main>
+      <footer>
+        <div className="container">Footer</div>
+      </footer>
     </>
   );
 }

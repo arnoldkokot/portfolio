@@ -1,0 +1,67 @@
+.container {
+  max-width: 1520px;
+  margin: 0 auto;
+  width: 90%;
+}
+header,
+main,
+footer {
+  padding: 250px 0;
+}
+/* Header */
+header {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+/* Main */
+main {
+  background-color: var(--primary);
+}
+
+/* Footer */
+footer {
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  color: var(--primary);
+  width: 100%;
+  max-height: var(--header-max);
+  height: var(--header-max);
+  transition: max-height 0.5s;
+}
+nav > .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav.scrolled {
+  background-color: var(--secondary);
+  max-height: var(--herder-min);
+}
+nav a,
+.nav-button {
+  padding: 15px 20px;
+}
+.nav-content {
+  display: none;
+}
+.nav-button > div {
+  height: 2px;
+  width: 25px;
+  background: var(--primary);
+  margin: 5px 0px;
+}
+@media screen and (min-width: 768px) {
+  .nav-button {
+    display: none;
+  }
+  .nav-content {
+    display: block;
+  }
+}
