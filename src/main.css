@@ -3,7 +3,6 @@
   margin: 0 auto;
   width: 90%;
 }
-header,
 main,
 footer {
   padding: 250px 0;
@@ -12,6 +11,7 @@ footer {
 header {
   background-color: var(--accent);
   color: var(--primary);
+  min-height: 70vh;
 }
 
 /* Main */
@@ -32,7 +32,10 @@ nav {
   width: 100%;
   max-height: var(--header-max);
   height: var(--header-max);
-  transition: max-height 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 nav > .container {
   height: 100%;

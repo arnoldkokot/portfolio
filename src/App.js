@@ -4,7 +4,7 @@ export default function App() {
     <>
       <Navigation />
       <header>
-        <div className="container">Header</div>
+        <div className="container"></div>
       </header>
       <main>
         <div className="container">
