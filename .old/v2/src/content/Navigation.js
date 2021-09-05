@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Navigation.css";
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
