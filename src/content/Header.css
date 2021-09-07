@@ -1,0 +1,27 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-hello {
+  margin: 0px 0px 20px 4px;
+  font-size: clamp(14px, 5vw, 16px);
+}
+.hero h1 {
+  margin: 0px;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 500;
+}
+.hero p {
+  margin: 20px 0px 0px;
+  max-width: 540px;
+  line-height: 1.5;
+}
+.hero a {
+  margin-top: 50px;
+  width: fit-content;
+}
+.hero .box-link {
+  padding: 1.25em 1.75em;
+}
