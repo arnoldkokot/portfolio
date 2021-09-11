@@ -1,0 +1,11 @@
+.face {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid var(--accent);
+}
+.face,
+.face img {
+  border-radius: 50%;
+}

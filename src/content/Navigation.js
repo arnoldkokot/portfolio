@@ -13,7 +13,13 @@ export default function Navigation() {
     <header className={scrolled ? "scrolled" : ""}>
       <a href=".">ARNOLD KOKOT</a>
       <div className="nav-button" onClick={() => setExpanded(!expanded)}>
-        <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
+        <svg
+          width="17"
+          height="16"
+          viewBox="0 0 17 16"
+          fill="none"
+          className={expanded ? "hidden" : ""}
+        >
           <g clipPath="url(#clip0)">
             <path
               d="M0.500244 3.5H15.5107"
@@ -42,6 +48,29 @@ export default function Navigation() {
               <rect width="16.0111" height="16" fill="white"></rect>
             </clipPath>
           </defs>
+        </svg>
+        <svg
+          width="17"
+          height="16"
+          viewBox="0 0 17 16"
+          fill="none"
+          data-test="close-button"
+          className={expanded ? "" : "hidden"}
+        >
+          <path
+            d="M13.5096 2.5L2.50195 13.5"
+            stroke="#212121"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></path>
+          <path
+            d="M2.50195 2.5L13.5096 13.5"
+            stroke="#212121"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></path>
         </svg>
       </div>
       <nav className={expanded ? "expanded" : ""}>
