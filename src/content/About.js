@@ -3,7 +3,7 @@ import face from "../img/face.jpg";
 export default function About() {
   return (
     <section>
-      <div className="container">
+      <div className="container about">
         <h2>
           <span>01. </span>About me
         </h2>

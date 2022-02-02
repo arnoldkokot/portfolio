@@ -9,3 +9,7 @@
 .face img {
   border-radius: 50%;
 }
+@media (min-width: 768px) {
+}
+@media (min-width: 1080px) {
+}

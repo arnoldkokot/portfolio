@@ -1,0 +1,14 @@
+.contact {
+  text-align: center;
+}
+.contact p {
+  max-width: 600px;
+  margin: 10px auto 50px auto;
+}
+.contact h3 {
+  font-size: clamp(25px, 5vw, 45px);
+  margin: 0;
+}
+.contact .box-link {
+  padding: 1.25em 1.75em;
+}
