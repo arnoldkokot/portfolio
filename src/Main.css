@@ -1,0 +1,14 @@
+.filters {
+  gap: 1.5625rem;
+}
+.project {
+  justify-content: space-between;
+}
+.project,
+.filters {
+  min-height: 84px;
+  border-bottom: 1px solid #ffffff1a;
+
+  display: flex;
+  align-items: center;
+}

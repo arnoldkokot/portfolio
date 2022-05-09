@@ -7,10 +7,12 @@ function App() {
   return (
     <>
       <nav>
-        <a href="/">Arnold Kokot</a>
-        <div>
-          <a href="/">Archive</a>
-          <a href="/">About</a>
+        <div className="container">
+          <a href="/">Arnold Kokot</a>
+          <div className="nav-links">
+            <a href="/">Archive</a>
+            <a href="/">About</a>
+          </div>
         </div>
       </nav>
       <header>
@@ -22,7 +24,25 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="container">Main</div>
+        <div className="container">
+          <div className="filters">
+            <p>All</p>
+            <p>Art Direction</p>
+            <p>Illustration</p>
+          </div>
+          <div className="project">
+            <p>Google</p>
+            <p>Art Direction, CGI, Illustration</p>
+          </div>
+          <div className="project">
+            <p>Google</p>
+            <p>Art Direction, CGI, Illustration</p>
+          </div>
+          <div className="project">
+            <p>Google</p>
+            <p>Art Direction, CGI, Illustration</p>
+          </div>
+        </div>
       </main>
       <footer>
         <div className="container">Footer</div>
