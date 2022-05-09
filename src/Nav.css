@@ -2,15 +2,20 @@ nav {
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 100;
 
   color: var(--white);
+  background-color: var(--gray);
 }
 nav > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  height: 70px;
+  min-height: 70px;
+}
+.nav-links {
+  display: flex;
 }
 .nav-links > a {
   margin-left: 40px;

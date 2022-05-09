@@ -12,3 +12,9 @@
   display: flex;
   align-items: center;
 }
+label {
+  opacity: 0.5;
+  font-size: 0.5625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
