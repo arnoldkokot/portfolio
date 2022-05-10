@@ -7,17 +7,31 @@ import "./Footer.css";
 const works = [
   {
     title: "League tracker",
-    categories: ["web app", "riot api"],
+    categories: ["Website", "API"],
   },
   {
     title: "Daiji Music",
-    categories: ["bot", "discord api"],
+    categories: ["Bot", "API"],
   },
   {
     title: "AGH Points",
-    categories: ["web app"],
+    categories: ["Website"],
   },
 ];
+
+// countedCategories is an object with categories as keys, and thier count in "works" array above as values.
+// eg. { all: 3, website: 2, bot: 1 }
+// it is used to display filter options with counters
+const countedCategories = works
+  .map((project) => project.categories)
+  .flat()
+  .reduce(
+    (counter, category) => ({
+      ...counter,
+      [category]: (counter[category] || 0) + 1,
+    }),
+    { All: works.length }
+  );
 
 function App() {
   return (
@@ -41,12 +55,15 @@ function App() {
       <section id="works">
         <div className="container">
           <div className="filters">
-            <p>All</p>
-            <p>Art Direction</p>
-            <p>Illustration</p>
+            {Object.entries(countedCategories).map(([category, count]) => (
+              <div>
+                {category}
+                <small>{count}</small>
+              </div>
+            ))}
           </div>
           {works.map(({ title, categories }) => (
-            <a className="project" href="/">
+            <a className="project" href="/" key={title}>
               <p>{title}</p>
               <label>{categories.join(", ")}</label>
             </a>
