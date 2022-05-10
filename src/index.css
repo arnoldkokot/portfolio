@@ -37,7 +37,7 @@ a {
 }
 .container,
 nav {
-  padding: 0 70px;
+  padding: 0 min(70px, 5%);
 }
 #contact,
 #works {

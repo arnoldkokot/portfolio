@@ -4,6 +4,21 @@ import "./Header.css";
 import "./Contact.css";
 import "./Footer.css";
 
+const works = [
+  {
+    title: "League tracker",
+    categories: ["web app", "riot api"],
+  },
+  {
+    title: "Daiji Music",
+    categories: ["bot", "discord api"],
+  },
+  {
+    title: "AGH Points",
+    categories: ["web app"],
+  },
+];
+
 function App() {
   return (
     <>
@@ -16,10 +31,11 @@ function App() {
       </nav>
       <header>
         <div className="container">
-          Hi, I’m Luzía a multidisciplinary graphic designer. I am currently
-          working at StudioRoses. I have a particular interest and sensitivity
-          for color, typography and photography. Some of the fields in which I
-          stand out are branding, editorial and web design, among others.
+          Hi, I’m Arnold, 23 years old developer located in Cracow. I am
+          currently studying Computer Sciencs at AGH UST. I have a particular
+          interest and sensitivity for color, typography and photography. Some
+          of the fields in which I stand out are branding, editorial and web
+          design, among others.
         </div>
       </header>
       <section id="works">
@@ -29,18 +45,12 @@ function App() {
             <p>Art Direction</p>
             <p>Illustration</p>
           </div>
-          <a className="project" href="/">
-            <p>Google</p>
-            <label>Art Direction, CGI, Illustration</label>
-          </a>
-          <a className="project" href="/">
-            <p>Google</p>
-            <label>Art Direction, CGI, Illustration</label>
-          </a>
-          <a className="project" href="/">
-            <p>Google</p>
-            <label>Art Direction, CGI, Illustration</label>
-          </a>
+          {works.map(({ title, categories }) => (
+            <a className="project" href="/">
+              <p>{title}</p>
+              <label>{categories.join(", ")}</label>
+            </a>
+          ))}
         </div>
       </section>
       <section id="contact">
@@ -58,7 +68,7 @@ function App() {
       </section>
       <footer>
         <div className="container">
-          Created by me. Code available <a href="/">here</a>.
+          Created & designed by me 😏 Code available&nbsp;<a href="/">here</a>.
         </div>
       </footer>
     </>
