@@ -8,8 +8,8 @@ footer {
 }
 footer > .container {
   min-height: var(--footer);
-  display: flex;
-  align-items: center;
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 footer a {
   display: inline;

@@ -14,3 +14,6 @@
   display: flex;
   gap: 40px;
 }
+#contact {
+  padding-bottom: 360px;
+}

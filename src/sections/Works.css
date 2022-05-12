@@ -1,5 +1,14 @@
+#works {
+  padding-bottom: 360px;
+}
 .filters {
   gap: 1.5625rem;
+}
+.filters > div {
+  cursor: pointer;
+}
+.filters > p {
+  margin-left: auto;
 }
 .project {
   justify-content: space-between;

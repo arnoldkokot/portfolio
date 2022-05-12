@@ -39,13 +39,26 @@ a {
 nav {
   padding: 0 min(70px, 5%);
 }
-#contact,
-#works {
-  padding-bottom: 360px;
-}
-header,
-nav,
-#works,
-#contact {
+main,
+nav {
   background-color: var(--gray);
 }
+/* a hover 
+a {
+  position: relative;
+  transition: 0.3s ease-out 0.1s;
+}
+a::after {
+  height: 2px;
+  width: 100%;
+  background: white;
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+a:hover::after {
+  transform: scaleX(1);
+}*/
