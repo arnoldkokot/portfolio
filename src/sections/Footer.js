@@ -4,7 +4,15 @@ function Footer() {
   return (
     <footer>
       <div className="container">
-        Created & designed by me 😏 Code available&nbsp;<a href="/">here</a>.
+        Coded & designed by me 😏 Code available&nbsp;
+        <a
+          href="https://github.com/arnoldkokot/portfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          here
+        </a>
+        .
       </div>
     </footer>
   );

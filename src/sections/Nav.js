@@ -5,8 +5,8 @@ function Nav() {
     <nav>
       <a href="/">Arnold Kokot</a>
       <div className="nav-links">
-        <a href="/">Archive</a>
-        <a href="/">About</a>
+        <a href="/">Github</a>
+        <a href="/">Resume</a>
       </div>
     </nav>
   );

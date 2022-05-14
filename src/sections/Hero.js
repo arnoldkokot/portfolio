@@ -5,8 +5,8 @@ function Hero() {
     <section id="hero">
       <div className="container">
         Hi, I’m Arnold, 23 years old developer located in Cracow. I am currently
-        studying Computer Science at AGH UST. I have a particular interest and
-        sensitivity for color, typography and photography. Some of the fields in
+        studying Computer Science at AGH UST. I have a particular interest in
+        web technologies, networking and photography. Some of the fields in
         which I stand out are branding, editorial and web design, among others.
       </div>
     </section>
@@ -15,6 +15,13 @@ function Hero() {
 
 export default Hero;
 /**
+ * About me
+ * - im a student
+ * - im interested in web tech
+ * -
+ *
+ * Hello, I'm Arnold,
+ *
  * I am a Digital Product Designer based in Istanbul. I am currently working as a Product Designer
  * at Norma and also working on freelance jobs and side projects. In my spare time, I try to
  * improve myself on Webflow and SwiftUI.

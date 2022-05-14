@@ -5,13 +5,31 @@ function Contact() {
     <section id="contact">
       <div className="container">
         <p>Get in touch with me</p>
-        <a href="/" className="mail">
+        <a href="mailto:hello@arnoldkokot.com" className="mail">
           hello@arnoldkokot.com
         </a>
         <div className="contact-links">
-          <a href="/">Twitter</a>
-          <a href="/">Github</a>
-          <a href="/">Instagram</a>
+          <a
+            href="https://github.com/arnoldkokot"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+          <a
+            href="https://twitter.com/deithyy"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Twitter
+          </a>
+          <a
+            href="https://www.instagram.com/niearek/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
+          </a>
         </div>
       </div>
     </section>
