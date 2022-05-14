@@ -44,7 +44,7 @@ function Works() {
             </div>
           ))}
 
-          <p>Projects</p>
+          <p>Selected Works</p>
         </div>
         {filtered.map(({ title, categories }) => (
           <a className="project" href="/" key={title}>

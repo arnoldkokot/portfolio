@@ -4,11 +4,11 @@ function Hero() {
   return (
     <section id="hero">
       <div className="container">
-        Hi, I’m Arnold, 23 years old developer located in Cracow. I am currently
-        studying Computer Science at AGH UST. I have a particular interest in
-        web technologies, networking and photography. Some of the fields in
-        which I stand out are branding, editorial and web design, among others.
+        Hi, I’m Arnold, a developer located in Cracow, currently studying
+        Computer Science at AGH UST and part-time working at WK Motors. I have a
+        particular interest in web technologies, networking and video games.
       </div>
+      <label>scroll down</label>
     </section>
   );
 }
