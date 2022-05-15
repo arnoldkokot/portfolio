@@ -1,5 +1,5 @@
 #hero {
-  height: 100vh;
+  height: calc(100vh - var(--nav));
 
   display: flex;
   align-items: center;

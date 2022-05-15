@@ -3,15 +3,22 @@ import Contact from "./sections/Contact";
 import Hero from "./sections/Hero";
 import Footer from "./sections/Footer";
 import Nav from "./sections/Nav";
-import { Route, Routes } from "react-router-dom";
+import Project from "./components/Project";
+import { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
+  let location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <>
       <Nav />
       <main>
         <Routes>
-          <Route path="archives" element={<Works />} />
           <Route
             index
             element={
@@ -22,6 +29,7 @@ function App() {
               </>
             }
           />
+          <Route path="/project/:url" element={<Project />} />
         </Routes>
       </main>
       <Footer />

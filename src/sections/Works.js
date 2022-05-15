@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Works.css";
 
 import works from "../works.json";
+import { Link } from "react-router-dom";
 
 // countedCategories is an object with categories as keys, and their count in "works" array above as values.
 // eg. { all: 3, website: 2, bot: 1 }
@@ -47,10 +48,14 @@ function Works() {
           <p>Selected Works</p>
         </div>
         {filtered.map(({ title, categories }) => (
-          <a className="project" href="/" key={title}>
+          <Link
+            className="project"
+            to={"/project/" + title.replace(/\s+/g, "-").toLowerCase()}
+            key={title}
+          >
             <p>{title}</p>
             <label>{categories.join(", ")}</label>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
