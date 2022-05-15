@@ -26,7 +26,7 @@ function Works() {
       <div className="container">
         <div className="filters">
           <div onClick={() => setFiltered(works)}>
-            All
+            <p className="hover">All</p>
             <small>{works.length}</small>
           </div>
 
@@ -39,7 +39,7 @@ function Works() {
               }
               key={category}
             >
-              {category}
+              <p className="hover">{category}</p>
               <small>{count}</small>
             </div>
           ))}

@@ -37,14 +37,17 @@ main,
 nav {
   background-color: var(--gray);
 }
-a {
+a,
+.hover {
   color: inherit;
   text-decoration: inherit;
   display: block;
   position: relative;
 }
 a::before,
-a::after {
+a::after,
+.hover::after,
+.hover::before {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -53,12 +56,14 @@ a::after {
   background: currentColor;
   transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
-a::after {
+a::after,
+.hover::after {
   content: "";
   transform: scaleX(0);
   transform-origin: right center;
 }
-a:hover::after {
+a:hover::after,
+.hover:hover::after {
   transform: scaleX(1);
   transform-origin: left center;
 }
