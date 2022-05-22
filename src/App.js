@@ -1,11 +1,7 @@
-import Works from "./sections/Works";
-import Contact from "./sections/Contact";
-import Hero from "./sections/Hero";
-import Footer from "./sections/Footer";
-import Nav from "./sections/Nav";
-import Project from "./components/Project";
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+
+import { Home, Project } from "./pages";
 
 function App() {
   let location = useLocation();
@@ -19,17 +15,8 @@ function App() {
       <Nav />
       <main>
         <Routes>
-          <Route
-            index
-            element={
-              <>
-                <Hero />
-                <Works />
-                <Contact />
-              </>
-            }
-          />
-          <Route path="/project/:url" element={<Project />} />
+          <Route index element={<Home />} />
+          <Route path="/:url" element={<Project />} />
         </Routes>
       </main>
       <Footer />
