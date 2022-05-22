@@ -1,18 +1,20 @@
-nav {
+header {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 10;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  min-height: 70px;
+  min-height: var(--header);
+  padding: 0 min(70px, 5%);
+  background-color: var(--gray);
 }
-.nav-links {
+nav {
   display: flex;
 }
-.nav-links > a {
+nav > a {
   margin-left: 40px;
 }

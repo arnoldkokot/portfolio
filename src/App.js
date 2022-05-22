@@ -2,6 +2,12 @@ import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { Home, Project } from "./pages";
+import { Header, Footer } from "./layouts";
+
+import "./assets/styles/index.css";
+import "./assets/styles/variables.css";
+import "./assets/styles/link.css";
+import "./assets/styles/text.css";
 
 function App() {
   let location = useLocation();
@@ -12,13 +18,11 @@ function App() {
 
   return (
     <>
-      <Nav />
-      <main>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/:url" element={<Project />} />
-        </Routes>
-      </main>
+      <Header />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/:url" element={<Project />} />
+      </Routes>
       <Footer />
     </>
   );
