@@ -3,10 +3,7 @@
  *
  */
 
-import { Contact } from "../components/contact";
-import { Section } from "../components/section";
-import { List } from "../components/list";
-
+import { Contact, Section, List } from "../components";
 import projects from "../assets/projects.json";
 
 function Home() {
@@ -20,7 +17,11 @@ function Home() {
         </h1>
       </Section>
       <Section>
-        <List items={projects} />
+        <List title="Selected Works">
+          {projects.map((project) => (
+            <List.Item {...project} key={project.title} />
+          ))}
+        </List>
       </Section>
       <Section>
         <Contact />

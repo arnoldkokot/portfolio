@@ -1,27 +1,24 @@
-.list-item {
+.list-header {
+  display: flex;
+  align-items: center;
   min-height: 84px;
+}
+.list-header > p {
+  margin-left: auto;
+}
+ul {
+  padding-left: 0;
+}
+li {
+  display: flex;
+  align-items: stretch;
+}
+li > a {
+  min-height: 84px;
+  width: 100%;
   border-bottom: 1px solid #ffffff1a;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-figure {
-  display: flex;
-}
-small {
-  font-size: 0.5625rem;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin-left: 0.3125rem;
-  opacity: 0.3;
-}
-.filters {
-  gap: 1.5625rem;
-  display: flex;
-  align-items: center;
-}
-.filters > p {
-  margin-left: auto;
 }

@@ -1,21 +1,27 @@
-import Item from "./Item";
 import "./List.css";
-import { countCategories } from "../../helpers";
-import Filter from "./Filter";
 
-//todo
-// change to nested component "Rows" - could be better
-function List({ items }) {
+function List({ title, children }) {
   return (
     <>
-      <div className="filters">
-        <Filter name="All" count={items.length} />
-        <p>Selected Works</p>
+      <div className="list-header">
+        <p>{title}</p>
       </div>
-      {items.map((item) => (
-        <Item {...item} key={item.title} />
-      ))}
+      <ul>{children}</ul>
     </>
   );
 }
+
+function Item({ title, categories }) {
+  return (
+    <li>
+      <a href="/">
+        <p>{title}</p>
+        <label>{categories.join(", ")}</label>
+      </a>
+    </li>
+  );
+}
+
+List.Item = Item;
+
 export default List;
