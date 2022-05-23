@@ -7,6 +7,8 @@ import { Contact } from "../components/contact";
 import { Section } from "../components/section";
 import { List } from "../components/list";
 
+import projects from "../assets/projects.json";
+
 function Home() {
   return (
     <main>
@@ -18,7 +20,7 @@ function Home() {
         </h1>
       </Section>
       <Section>
-        <List />
+        <List items={projects} />
       </Section>
       <Section>
         <Contact />

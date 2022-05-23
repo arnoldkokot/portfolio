@@ -1,29 +1,20 @@
+import Item from "./Item";
 import "./List.css";
-import ListItem from "./ListItem";
+import { countCategories } from "../../helpers";
+import Filter from "./Filter";
 
-function List(props) {
+//todo
+// change to nested component "Rows" - could be better
+function List({ items }) {
   return (
     <>
       <div className="filters">
-        <figure>
-          <p className="hover">All</p>
-          <small>10</small>
-        </figure>
-        <figure>
-          <p className="hover">All</p>
-          <small>10</small>
-        </figure>
-        <figure>
-          <p className="hover">All</p>
-          <small>10</small>
-        </figure>
+        <Filter name="All" count={items.length} />
         <p>Selected Works</p>
       </div>
-      <div>
-        <ListItem />
-        <ListItem />
-        <ListItem />
-      </div>
+      {items.map((item) => (
+        <Item {...item} key={item.title} />
+      ))}
     </>
   );
 }
