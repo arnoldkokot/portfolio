@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   return (
     <header>
-      <a href="/">Arnold Kokot</a>
+      <Link to="/">Arnold Kokot</Link>
       <nav>
         <a href="/">Github</a>
         <a href="/">Resume</a>

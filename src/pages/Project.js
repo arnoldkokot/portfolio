@@ -3,30 +3,23 @@
  *
  */
 
+import { useParams } from "react-router-dom";
+import { Section } from "../components";
+import { getByURL } from "../helpers";
+
 function Project() {
-  return <main>Project page</main>;
+  let params = useParams();
+
+  const { title, categories } = getByURL(params.url);
+
+  return (
+    <main>
+      <Section hero>
+        <h1>{title}</h1>
+        <p>{categories.join(", ")}</p>
+      </Section>
+    </main>
+  );
 }
 
 export default Project;
-
-// import { useParams } from "react-router-dom";
-// import "./Project.css";
-// import works from "../works.json";
-
-// function Project() {
-//   let params = useParams();
-
-//   const { title, categories } = works.find(
-//     (project) => project.title.replace(/\s+/g, "-").toLowerCase() === params.url
-//   );
-
-//   return (
-//     <section>
-//       <div className="container">
-//         {title} {categories}
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Project;

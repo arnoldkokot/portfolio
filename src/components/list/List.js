@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { kebabCase } from "../../helpers";
 import "./List.css";
 
 function List({ title, children }) {
@@ -14,10 +16,10 @@ function List({ title, children }) {
 function Item({ title, categories }) {
   return (
     <li>
-      <a href="/">
+      <Link to={"/" + kebabCase(title)}>
         <p>{title}</p>
         <label>{categories.join(", ")}</label>
-      </a>
+      </Link>
     </li>
   );
 }

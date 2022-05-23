@@ -23,6 +23,7 @@ main {
   margin-bottom: var(--footer);
   min-height: 100vh;
   padding-top: var(--header);
+  padding-bottom: 200px;
   background-color: var(--gray);
 }
 label {
