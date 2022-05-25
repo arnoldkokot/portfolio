@@ -7,7 +7,7 @@ function Contact() {
       <a href="mailto:hello@arnoldkokot.com" className="mail">
         hello@arnoldkokot.com
       </a>
-      <div className="contact-links">
+      <div className="gapped-box">
         <a
           href="https://github.com/arnoldkokot"
           target="_blank"

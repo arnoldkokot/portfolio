@@ -1,6 +1,9 @@
 ## todo
 
 - glass effect on nav
-- router project subsites
 - spring fade in on scroll
 - spring on list filter
+
+# images
+
+best width 1600 or 800

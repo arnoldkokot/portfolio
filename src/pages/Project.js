@@ -10,13 +10,30 @@ import { getByURL } from "../helpers";
 function Project() {
   let params = useParams();
 
-  const { title, categories } = getByURL(params.url);
+  let project = getByURL(params.url);
+
+  if (project === undefined)
+    return (
+      <main>
+        <Section hero>
+          <h1>Page not found</h1>
+          <p>Sadly, content under provided url does not exist</p>
+        </Section>
+      </main>
+    );
+
+  let { title, description, images } = project;
 
   return (
     <main>
-      <Section hero>
+      <Section>
         <h1>{title}</h1>
-        <p>{categories.join(", ")}</p>
+        <p>{description}</p>
+      </Section>
+      <Section>
+        {images.map((url) => (
+          <img src={"images/" + url} alt={url} key={url} />
+        ))}
       </Section>
     </main>
   );

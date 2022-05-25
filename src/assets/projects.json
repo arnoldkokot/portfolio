@@ -1,18 +1,39 @@
 [
   {
     "title": "League tracker",
-    "categories": ["Website", "API"]
+    "categories": ["Website", "API"],
+    "links": {
+      "GitHub": "https://github.com/arnoldkokot/tracker"
+    },
+    "images": [],
+    "description": "League tracker provides insight to League of Legends players about thier game performance, match history, and ranked ladder."
   },
   {
     "title": "Daiji Music",
-    "categories": ["Bot", "API"]
+    "categories": ["Bot", "API"],
+    "links": {
+      "GitHub": "https://github.com/arnoldkokot/discord-bot",
+      "Live": "https://daiji-bot.com/"
+    },
+    "images": ["daiji_1.png", "daiji_2.png"],
+    "description": "Discord music bot allowing you to play YouTube videos and playlists in a voice channel using text commands."
   },
   {
     "title": "AGH Points",
-    "categories": ["Website"]
+    "categories": ["Website"],
+    "links": {
+      "GitHub": "https://github.com/arnoldkokot/recruitment-calculator"
+    },
+    "images": [],
+    "description": "Recriutment points calculator for people applying to AGH UST."
   },
   {
     "title": "Portfolio",
-    "categories": ["Website"]
+    "categories": ["Website"],
+    "links": {
+      "GitHub": "https://github.com/arnoldkokot/portfolio"
+    },
+    "images": [],
+    "description": "This website."
   }
 ]

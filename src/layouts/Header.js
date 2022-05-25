@@ -5,8 +5,14 @@ function Header() {
   return (
     <header>
       <Link to="/">Arnold Kokot</Link>
-      <nav>
-        <a href="/">Github</a>
+      <nav className="gapped-box">
+        <a
+          href="https://github.com/arnoldkokot"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
+        </a>
         <a href="/">Resume</a>
       </nav>
     </header>

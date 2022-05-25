@@ -12,9 +12,3 @@ header {
   padding: 0 min(70px, 5%);
   background-color: var(--gray);
 }
-nav {
-  display: flex;
-}
-nav > a {
-  margin-left: 40px;
-}
