@@ -38,7 +38,7 @@ function Project() {
         </div>
         <Gallery>
           {images.map((url) => (
-            <Gallery.Image src={"images/" + url} alt={url} key={url} />
+            <Gallery.Image src={"images/" + url} key={url} />
           ))}
         </Gallery>
       </Section>

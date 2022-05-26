@@ -12,7 +12,7 @@ function Gallery({ title, children }) {
 function Image(props) {
   return (
     <div className="gallery-item">
-      <img {...props} />
+      <img {...props} alt={props.src.split(".")[0]} />
     </div>
   );
 }
