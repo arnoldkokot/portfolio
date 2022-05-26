@@ -38,7 +38,7 @@ function Project() {
         </div>
       </Section>
       <Section>
-        <Gallery title="Click on images">
+        <Gallery title="Click to preview">
           {images.map((url) => (
             <Gallery.Image src={"images/" + url} alt={url} key={url} />
           ))}
