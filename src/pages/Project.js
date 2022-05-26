@@ -4,7 +4,7 @@
  */
 
 import { useParams } from "react-router-dom";
-import { Section, Gallery, Contact } from "../components";
+import { Section, Gallery } from "../components";
 import { getByURL } from "../helpers";
 
 function Project() {
@@ -31,21 +31,16 @@ function Project() {
         <h3>{description}</h3>
         <div className="gapped-box">
           {Object.entries(links).map(([alias, link]) => (
-            <a href={link} key={alias}>
+            <a href={link} key={alias} target="_blank" rel="noreferrer">
               {alias}
             </a>
           ))}
         </div>
-      </Section>
-      <Section>
-        <Gallery title="Click to preview">
+        <Gallery>
           {images.map((url) => (
             <Gallery.Image src={"images/" + url} alt={url} key={url} />
           ))}
         </Gallery>
-      </Section>
-      <Section>
-        <Contact />
       </Section>
     </main>
   );
