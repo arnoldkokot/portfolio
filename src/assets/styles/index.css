@@ -32,7 +32,7 @@ label {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-.gapped-box {
+.link-box {
   display: flex;
   gap: 40px;
 }

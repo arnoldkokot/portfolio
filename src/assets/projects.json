@@ -15,7 +15,14 @@
       "See github repo": "https://github.com/arnoldkokot/discord-bot",
       "Preview live": "https://daiji-bot.com/"
     },
-    "images": ["daiji-1.png", "daiji-2.png"],
+    "images": [
+      "daiji-1.png",
+      "daiji-2.png",
+      "daiji-3.png",
+      "daiji-4.png",
+      "daiji-5.png",
+      "daiji-6.png"
+    ],
     "description": "Discord music bot allowing you to play YouTube videos and playlists in a voice channel using text commands."
   },
   {
@@ -26,14 +33,5 @@
     },
     "images": [],
     "description": "Recriutment points calculator for people applying to AGH UST."
-  },
-  {
-    "title": "Portfolio",
-    "categories": ["Website"],
-    "links": {
-      "GitHub": "https://github.com/arnoldkokot/portfolio"
-    },
-    "images": [],
-    "description": "This website."
   }
 ]
