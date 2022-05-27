@@ -32,6 +32,11 @@ function Project() {
           ))}
         </Gallery>
       </Section>
+      <Section>
+        <Link to="/">
+          <h2>Back to home page</h2>
+        </Link>
+      </Section>
     </main>
   );
 }

@@ -2,9 +2,7 @@
   display: flex;
   align-items: center;
   min-height: 84px;
-}
-.list-header > p {
-  margin-left: auto;
+  border-bottom: 1px solid #ffffff1a;
 }
 ul {
   padding-left: 0;

@@ -15,6 +15,7 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    console.log("Updating title");
 
     const currentURL = location.pathname.substring(1);
     const project = getByURL(currentURL);

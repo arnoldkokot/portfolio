@@ -8,15 +8,12 @@
   position: relative;
   padding-bottom: 100%;
   overflow: hidden;
+
+  filter: brightness(50%);
+  transition: 0.5s;
 }
-.gallery-item > img {
-  position: absolute;
-  max-width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+.gallery-item:hover {
+  filter: brightness(100%);
 }
 @media (min-width: 425px) {
   .gallery {

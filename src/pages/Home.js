@@ -17,7 +17,7 @@ function Home() {
         </h1>
       </Section>
       <Section>
-        <List title="Selected Works">
+        <List title="Selected projects">
           {projects.map((project) => (
             <List.Item {...project} key={project.title} />
           ))}
