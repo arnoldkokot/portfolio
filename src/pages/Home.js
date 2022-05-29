@@ -12,8 +12,8 @@ function Home() {
       <Section hero>
         <h1>
           Hi, I’m Arnold, a developer located in Cracow, currently studying
-          Computer Science at AGH UST and part-time working at WK Motors. I have
-          a particular interest in web technologies, networking and video games.
+          Computer Science at AGH UST and part-time working at SMotor. I have a
+          particular interest in web technologies, networking and video games.
         </h1>
       </Section>
       <Section>
