@@ -9,13 +9,17 @@ import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
 import "./assets/styles/link.css";
 import "./assets/styles/text.css";
+import "./assets/styles/loader.css";
 
-function App() {
+function App({ hideLoader }) {
+  useEffect(() => {
+    hideLoader();
+  }, [hideLoader]);
+
   let location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    console.log("Updating title");
 
     const currentURL = location.pathname.substring(1);
     const project = getByURL(currentURL);

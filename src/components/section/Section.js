@@ -7,7 +7,12 @@ import "./Section.css";
 function Section({ children, hero }) {
   const ref = useRef();
   const revealed = useReveal(ref);
-  const props = useSpring({ opacity: revealed ? 1 : 0, delay: 200 });
+  const props = useSpring({
+    opacity: revealed ? 1 : 0,
+    delay: hero ? 800 : 300,
+    position: "relative",
+    bottom: revealed ? 0 : 30,
+  });
 
   return (
     <animated.div style={props}>

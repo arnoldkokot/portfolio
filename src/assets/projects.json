@@ -22,7 +22,7 @@
     "links": {
       "See github repo": "https://github.com/arnoldkokot/tracker"
     },
-    "images": [],
+    "images": ["tracker-1.png", "tracker-2.png", "tracker-3.png"],
     "description": "League tracker provides insight to League of Legends players about thier game performance, match history, and ranked ladder."
   },
   {

@@ -22,6 +22,7 @@ function Contact() {
           href="https://www.instagram.com/niearek/"
           target="_blank"
           rel="noreferrer"
+          className="external"
         >
           Instagram
         </a>
