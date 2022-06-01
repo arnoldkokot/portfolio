@@ -9,6 +9,6 @@ header {
   align-items: center;
 
   min-height: var(--header);
-  padding: 0 min(70px, 5%);
+  padding: 0 min(80px, 5%);
   background-color: var(--gray);
 }

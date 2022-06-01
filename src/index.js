@@ -4,14 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
 
-const loader = document.querySelector("#loader");
-const hideLoader = () => loader.classList.add("hide-loader");
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App hideLoader={hideLoader} />
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );

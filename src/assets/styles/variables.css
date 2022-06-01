@@ -1,10 +1,10 @@
 :root {
-  --gray: #231f20;
+  --gray: #111; /*#231f20*/
   --white: #f5f5f5;
   --footer-bg: #000000;
 
   --footer: 500px;
-  --header: 70px;
+  --header: 130px;
 
   --max-width: 1600px;
 }

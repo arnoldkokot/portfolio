@@ -4,7 +4,6 @@ footer {
   right: 0;
   bottom: 0;
   z-index: -10;
-  background-color: var(--footer-bg);
 }
 footer > .container {
   height: var(--footer);

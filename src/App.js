@@ -9,13 +9,8 @@ import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
 import "./assets/styles/link.css";
 import "./assets/styles/text.css";
-import "./assets/styles/loader.css";
 
-function App({ hideLoader }) {
-  useEffect(() => {
-    hideLoader();
-  }, [hideLoader]);
-
+function App() {
   let location = useLocation();
 
   useEffect(() => {
