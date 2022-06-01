@@ -14,7 +14,7 @@ function App() {
         >
           <Header />
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.5} factor={2}>
+        <ParallaxLayer offset={0} speed={0.5} factor={1.5}>
           <Hero />
           <Works />
         </ParallaxLayer>

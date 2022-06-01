@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Link, LinkBox } from "../components";
 
+import content from "../assets/content.json";
+
 const Header = styled.header`
   display: flex;
   justify-content: space-between;
@@ -13,10 +15,14 @@ const Header = styled.header`
 export default function Component() {
   return (
     <Header>
-      <Link>Arnold Kokot</Link>
+      <Link href="/">Arnold Kokot</Link>
       <LinkBox>
-        <Link>Resume</Link>
-        <Link>Github</Link>
+        <Link external href={content.resume}>
+          Resume
+        </Link>
+        <Link external href={content.github}>
+          Github
+        </Link>
       </LinkBox>
     </Header>
   );

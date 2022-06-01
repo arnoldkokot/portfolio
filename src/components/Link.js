@@ -3,7 +3,6 @@ import styled from "styled-components";
 const Link = styled.a`
   color: inherit;
   text-decoration: inherit;
-  display: inline-block;
   position: relative;
 
   &::before,
@@ -28,9 +27,14 @@ const Link = styled.a`
   }
 `;
 
-export default function Component({ children, className }) {
+export default function Component({ children, className, href, external }) {
   return (
-    <Link className={className} href="#">
+    <Link
+      className={className}
+      href={href}
+      target={external && "_blank"}
+      rel={external && "noreferrer"}
+    >
       {children}
     </Link>
   );

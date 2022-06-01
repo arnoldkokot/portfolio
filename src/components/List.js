@@ -15,21 +15,15 @@ const Item = styled(Link)`
   justify-content: space-between;
 `;
 
-export default function Component() {
+export default function Component({ elements }) {
   return (
     <List>
-      <Item>
-        <p>League tracker</p>
-        <Label>website, api</Label>
-      </Item>
-      <Item>
-        <p>Daiji</p>
-        <Label>bot, api</Label>
-      </Item>
-      <Item>
-        <p>Recruitment Calculator</p>
-        <Label>website</Label>
-      </Item>
+      {elements.map(({ name, tags, url }) => (
+        <Item external href={url}>
+          <p>{name}</p>
+          <Label>{tags.join(", ")}</Label>
+        </Item>
+      ))}
     </List>
   );
 }
