@@ -1,7 +1,5 @@
-import Contact from "./contact/Contact";
-import List from "./list/List";
-import Section from "./section/Section";
-import Gallery from "./gallery/Gallery";
-import Heading from "./heading/Heading";
-
-export { Contact, List, Section, Gallery, Heading };
+export { default as Container } from "./Container";
+export { default as Link } from "./Link";
+export { default as LinkBox } from "./LinkBox";
+export { default as List } from "./List";
+export { default as Label } from "./Label";
