@@ -4,7 +4,7 @@
   <h3 align="center">Portfolio website</h3>
 
   <p align="center">
-    Website for arnoldkokot.com built with React.
+    arnoldkokot.com website built with React.
     <br />
     <a href="https://arnoldkokot.com"><strong>View website »</strong></a>
     <br />
@@ -24,8 +24,8 @@
 Major tools and websites.
 
 - [React](https://reactjs.org/)
-- [React-router](https://reactrouter.com/)
 - [React-spring](https://react-spring.io/)
+- [Styled components](https://styled-components.com/)
 
 ## Getting Started
 

@@ -8,17 +8,20 @@
     {
       "name": "League tracker",
       "tags": ["api", "website"],
-      "url": "https://github.com/arnoldkokot/tracker"
+      "url": "https://github.com/arnoldkokot/tracker",
+      "description": "League tracker provides insight to League of Legends players about thier game performance, match history, and ranked ladder."
     },
     {
       "name": "Daiji",
       "tags": ["bot", "api"],
-      "url": "https://github.com/arnoldkokot/discord-bot"
+      "url": "https://github.com/arnoldkokot/discord-bot",
+      "description": "Discord music bot allowing you to play YouTube videos and playlists in a voice channel using text commands."
     },
     {
       "name": "Recruitment Calculator",
       "tags": ["website"],
-      "url": "https://github.com/arnoldkokot/recruitment-calculator"
+      "url": "https://github.com/arnoldkokot/recruitment-calculator",
+      "description": "Recriutment points calculator for people applying to AGH UST."
     }
   ]
 }
