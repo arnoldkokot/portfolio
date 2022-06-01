@@ -1,36 +1,47 @@
-import { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-
-import { Home, Project } from "./pages";
-import { Header, Footer } from "./layouts";
-import { getByURL } from "./helpers";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
 import "./assets/styles/link.css";
 import "./assets/styles/text.css";
+import { Contact } from "./components";
+import Hero from "./sections/Hero";
 
 function App() {
-  let location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-
-    const currentURL = location.pathname.substring(1);
-    const project = getByURL(currentURL);
-
-    document.title = "Arnold Kokot " + (project ? "- " + project.title : "");
-  }, [location]);
-
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/:url" element={<Project />} />
-      </Routes>
-      <Footer />
-    </>
+    <Parallax pages={3}>
+      <ParallaxLayer
+        offset={0}
+        speed={0.25}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Hero />
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={1}
+        speed={1}
+        factor={1}
+        style={{
+          backgroundColor: "yellow",
+        }}
+      >
+        <div>Projects secion</div>
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={2.5}
+        speed={1}
+        factor={0.25}
+        style={{
+          backgroundColor: "red",
+        }}
+      >
+        <Contact />
+      </ParallaxLayer>
+    </Parallax>
   );
 }
 

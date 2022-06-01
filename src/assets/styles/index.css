@@ -9,35 +9,15 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--white);
-  background-color: var(--gray);
+  color: var(--text);
+  background-color: var(--background);
   font-weight: 300;
 }
 ::-moz-selection {
-  color: var(--gray);
-  background: var(--white);
+  color: var(--background);
+  background: var(--text);
 }
 ::selection {
-  color: var(--gray);
-  background: var(--white);
-}
-main {
-  margin-bottom: var(--footer);
-  min-height: 100vh;
-  padding-top: var(--header);
-  padding-bottom: 200px;
-  background-color: var(--gray);
-}
-label {
-  opacity: 0.5;
-  font-size: 0.5625rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-.link-box {
-  display: flex;
-  gap: 40px;
-}
-img {
-  max-width: 100%;
+  color: var(--background);
+  background: var(--text);
 }
