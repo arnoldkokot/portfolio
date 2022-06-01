@@ -2,9 +2,12 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import { Contact, Header, Hero, Works, Skills } from "./sections";
 
+import { Background } from "./components";
+
 function App() {
   return (
     <>
+      <Background />
       <Parallax pages={2.75}>
         <ParallaxLayer
           sticky={{ start: 0, end: 2 }}

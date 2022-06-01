@@ -19,7 +19,7 @@ export default function Component({ elements }) {
   return (
     <List>
       {elements.map(({ name, tags, url }) => (
-        <Item external href={url}>
+        <Item external href={url} key={name}>
           <p>{name}</p>
           <Label>{tags.join(", ")}</Label>
         </Item>

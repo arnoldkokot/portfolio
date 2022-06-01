@@ -11,7 +11,6 @@ const SkillContainer = styled(Container)`
   }
 `;
 
-/**text-align: center; */
 const Title = styled.h1`
   font-size: max(1.2vw, 24px);
   line-height: 1.6;
@@ -46,6 +45,7 @@ export default function Component() {
         <br />
         React
       </Skills>
+
       <Skills>
         <Summary>Backend</Summary>
         Node
