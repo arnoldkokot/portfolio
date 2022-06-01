@@ -1,11 +1,11 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-import { Contact, Header, Hero, Works } from "./sections";
+import { Contact, Header, Hero, Works, Skills } from "./sections";
 
 function App() {
   return (
     <>
-      <Parallax pages={2}>
+      <Parallax pages={2.75}>
         <ParallaxLayer
           sticky={{ start: 0, end: 2 }}
           style={{
@@ -16,8 +16,8 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer
           offset={0}
-          speed={0.5}
-          factor={1.5}
+          speed={0.25}
+          factor={2.25}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -25,9 +25,10 @@ function App() {
           }}
         >
           <Hero />
+          <Skills />
           <Works />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.5} speed={2} factor={0.5}>
+        <ParallaxLayer offset={2} speed={1} factor={0.5}>
           <Contact />
         </ParallaxLayer>
       </Parallax>
