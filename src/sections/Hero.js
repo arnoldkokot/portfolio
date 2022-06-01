@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 import { Container, Label } from "../components";
 
+// 2.125em
 const Hero = styled.h1`
-  font-size: 2.125em;
+  font-size: max(1.2vw, 24px);
   line-height: 1.6;
   text-align: center;
   font-weight: 300;

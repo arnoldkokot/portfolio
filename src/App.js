@@ -14,7 +14,16 @@ function App() {
         >
           <Header />
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.5} factor={1.5}>
+        <ParallaxLayer
+          offset={0}
+          speed={0.5}
+          factor={1.5}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+        >
           <Hero />
           <Works />
         </ParallaxLayer>

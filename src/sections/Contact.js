@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <Container>
       <p>Get in touch with me</p>
-      <Mail href="/test">hello@arnoldkokot.com</Mail>
+      <Mail href="mailto:hello@arnoldkokot.com">hello@arnoldkokot.com</Mail>
       <LinkBox>
         <Link external href={content.github}>
           Github
