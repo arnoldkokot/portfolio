@@ -1,25 +1,35 @@
 import styled from "styled-components";
-import { Container, List, Link } from "../components";
-import content from "../assets/content.json";
+import { Container, Heading, Project } from "../components";
 
-const ListHeader = styled.div`
-  height: 84px;
+import { works } from "../assets/content";
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+const LeftHeading = styled(Heading)`
+  width: 50%;
+  margin: 0 0 50px auto;
+  text-align: right;
 `;
 
-export default function Component() {
+const Wrapper = styled.div`
+  display: grid;
+  justify-items: center;
+  align-items: start;
+
+  column-gap: 34px;
+  row-gap: 34px;
+  @media (min-width: 1020px) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
+
+export default function Works() {
   return (
     <Container>
-      <ListHeader>
-        <p>Selected Works</p>
-        <Link external href={content.github}>
-          Github
-        </Link>
-      </ListHeader>
-      <List elements={content.projects} />
+      <LeftHeading>Selected Works</LeftHeading>
+      <Wrapper>
+        {Object.entries(works).map(([id, metadata]) => (
+          <Project {...metadata} key={id} />
+        ))}
+      </Wrapper>
     </Container>
   );
 }

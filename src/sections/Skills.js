@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../components";
+import { Container, Heading } from "../components";
 
 const SkillContainer = styled(Container)`
   display: grid;
@@ -11,14 +11,11 @@ const SkillContainer = styled(Container)`
   }
 `;
 
-const Title = styled.h1`
-  font-size: max(1.2vw, 24px);
-  line-height: 1.6;
-  font-weight: 300;
+const Title = styled(Heading)`
   grid-column: 1 / 4;
 `;
 
-const Skills = styled.div`
+const Wrapper = styled.div`
   font-size: 16px;
   line-height: 1.4;
   grid-row: 2;
@@ -30,23 +27,24 @@ const Summary = styled.p`
   margin-bottom: 10px;
 `;
 
-export default function Component() {
+export default function Skills() {
   return (
     <SkillContainer>
       <Title>
         Currently in love with web development, focused on accessibility,
         simplicity and security. Here are my favourite tools.
       </Title>
-      <Skills>
+
+      <Wrapper>
         <Summary>Frontend</Summary>
         JavaScript
         <br />
         HTML & CSS
         <br />
         React
-      </Skills>
+      </Wrapper>
 
-      <Skills>
+      <Wrapper>
         <Summary>Backend</Summary>
         Node
         <br />
@@ -57,15 +55,16 @@ export default function Component() {
         MongoDB
         <br />
         Nginx
-      </Skills>
-      <Skills>
+      </Wrapper>
+
+      <Wrapper>
         <Summary>Other</Summary>
         GIT
         <br />
-        UNIX
+        WSL2
         <br />
         Figma
-      </Skills>
+      </Wrapper>
     </SkillContainer>
   );
 }

@@ -3,13 +3,9 @@ import { normalize } from "styled-normalize";
 
 export const theme = {
   font: `"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`,
-  weights: {
-    normal: "300",
-  },
   color: {
     text: "#f5f5f5",
     background: "#111111",
-    backgroundBlur: "rgba(17, 17, 17, 0.69)",
     border: "#ffffff1a",
   },
 };
@@ -25,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.color.text};
     background-color: ${({ theme }) => theme.color.background};
     font-family: ${({ theme }) => theme.font};
-    font-weight: ${({ theme }) => theme.weights.normal};
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -36,5 +32,13 @@ export const GlobalStyle = createGlobalStyle`
   ::selection {
     color: ${({ theme }) => theme.color.background};
     background: ${({ theme }) => theme.color.text};
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  a {
+    color: inherit;
+    text-decoration: inherit;
   }
 `;

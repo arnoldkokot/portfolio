@@ -1,13 +1,9 @@
 import styled from "styled-components";
 
-import { Container, Label } from "../components";
+import { Container, Heading, Label, Reveal } from "../components";
 
-// 2.125em
-const Hero = styled.h1`
-  font-size: max(1.2vw, 24px);
-  line-height: 1.6;
+const HeroHeading = styled(Heading)`
   text-align: center;
-  font-weight: 300;
 `;
 
 const HeroContainer = styled(Container)`
@@ -25,15 +21,17 @@ const HeroLabel = styled(Label)`
   transform: translate(-50%, 0);
 `;
 
-export default function Component() {
+export default function Hero() {
   return (
     <HeroContainer>
-      <Hero>
+      <HeroHeading>
         Hi, I’m Arnold, a developer located in Cracow, currently studying
         Computer Science at AGH UST and part-time working at SMotor. I have a
         particular interest in web technologies, networking and video games.
-      </Hero>
-      <HeroLabel>scroll down</HeroLabel>
+      </HeroHeading>
+      <HeroLabel>
+        <Reveal>scroll down</Reveal>
+      </HeroLabel>
     </HeroContainer>
   );
 }

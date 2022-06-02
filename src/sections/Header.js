@@ -1,29 +1,34 @@
 import styled from "styled-components";
-import { Link, LinkBox } from "../components";
+import { Link } from "../components";
 
-import content from "../assets/content.json";
+import { links } from "../assets/content";
 
-const Header = styled.header`
+const HeaderContainer = styled.header`
+  height: 100%;
+  padding: 0 min(80px, 5%);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  min-height: 130px;
-  padding: 0 min(80px, 5%);
 `;
 
-export default function Component() {
+const Links = styled.div`
+  display: flex;
+  gap: 3em;
+`;
+
+export default function Header() {
   return (
-    <Header>
+    <HeaderContainer>
       <Link href="/">Arnold Kokot</Link>
-      <LinkBox>
-        <Link external href={content.resume}>
+      <Links>
+        <Link external href={links.resume}>
           Resume
         </Link>
-        <Link external href={content.github}>
+        <Link external href={links.github}>
           Github
         </Link>
-      </LinkBox>
-    </Header>
+      </Links>
+    </HeaderContainer>
   );
 }
