@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Container, Heading, Label, Reveal } from "../components";
+import { Container, Heading, Label } from "../components";
 
 const HeroHeading = styled(Heading)`
   text-align: center;
@@ -29,9 +29,7 @@ export default function Hero() {
         Computer Science at AGH UST and part-time working at SMotor. I have a
         particular interest in web technologies, networking and video games.
       </HeroHeading>
-      <HeroLabel>
-        <Reveal>scroll down</Reveal>
-      </HeroLabel>
+      <HeroLabel>scroll down</HeroLabel>
     </HeroContainer>
   );
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Link } from "../components";
 
+import { Link } from "../components";
 import { links } from "../assets/content";
 
 const HeaderContainer = styled.header`
@@ -12,6 +12,11 @@ const HeaderContainer = styled.header`
   align-items: center;
 `;
 
+const Background = styled.div`
+  padding: 10px;
+  background-color: ${({ theme }) => theme.color.background};
+`;
+
 const Links = styled.div`
   display: flex;
   gap: 3em;
@@ -20,14 +25,20 @@ const Links = styled.div`
 export default function Header() {
   return (
     <HeaderContainer>
-      <Link href="/">Arnold Kokot</Link>
+      <Background>
+        <Link href="/">Arnold Kokot</Link>
+      </Background>
       <Links>
-        <Link external href={links.resume}>
-          Resume
-        </Link>
-        <Link external href={links.github}>
-          Github
-        </Link>
+        <Background>
+          <Link external href={links.resume}>
+            Resume
+          </Link>
+        </Background>
+        <Background>
+          <Link external href={links.github}>
+            Github
+          </Link>
+        </Background>
       </Links>
     </HeaderContainer>
   );

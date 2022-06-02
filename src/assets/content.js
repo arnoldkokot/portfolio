@@ -14,15 +14,15 @@ export const works = {
   "league-tracker": {
     title: "League tracker",
     img: trackerPreview,
-    tags: ["api", "website"],
+    tags: ["website", "riot api"],
     url: "https://github.com/arnoldkokot/tracker",
     description:
       "League tracker provides insight to League of Legends players about thier game performance, match history, and ranked ladder.",
   },
   daiji: {
-    title: "Daiji",
+    title: "Daiji - Music bot",
     img: daijiPreview,
-    tags: ["bot", "api"],
+    tags: ["bot", "discord api"],
     url: "https://github.com/arnoldkokot/discord-bot",
     description:
       "Discord music bot allowing you to play YouTube videos and playlists in a voice channel using text commands.",

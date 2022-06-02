@@ -7,6 +7,7 @@ export const theme = {
     text: "#f5f5f5",
     background: "#111111",
     border: "#ffffff1a",
+    header: "#000000",
   },
 };
 

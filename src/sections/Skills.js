@@ -17,7 +17,7 @@ const Title = styled(Heading)`
 
 const Wrapper = styled.div`
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.5;
   grid-row: 2;
 `;
 

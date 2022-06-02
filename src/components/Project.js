@@ -4,9 +4,6 @@ import { Label } from ".";
 
 const Wrapper = styled.a`
   max-width: 650px;
-  & img {
-    filter: brightness(50%);
-  }
 `;
 
 const Description = styled.div`
@@ -17,18 +14,24 @@ const Description = styled.div`
   height: 70px;
 `;
 
-// Keep images 650px wide and square
+// Keep images at least 650 x 650
 export default function Project({ title, img, tags, url }) {
-  const [{ scale }, api] = useSpring(() => ({ scale: 1 }));
+  const [{ scale, filter }, api] = useSpring(() => ({
+    scale: 1,
+    filter: "brightness(50%)",
+  }));
 
   return (
     <animated.div
+      onMouseEnter={() =>
+        api.start({ scale: 1.05, filter: "brightness(100%)" })
+      }
+      onMouseLeave={() => api.start({ scale: 1, filter: "brightness(50%)" })}
       style={{ scale }}
-      onMouseEnter={() => api.start({ scale: 1.05 })}
-      onMouseLeave={() => api.start({ scale: 1 })}
     >
       <Wrapper href={url} target="_blank">
-        <img src={img} alt={title} />
+        <animated.img style={{ filter }} src={img} alt={title} />
+
         <Description>
           <p>{title}</p>
           <Label>{tags.join(", ")}</Label>
