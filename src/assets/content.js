@@ -15,7 +15,7 @@ export const works = {
     title: "League tracker",
     img: trackerPreview,
     tags: ["website", "riot api"],
-    url: "https://github.com/arnoldkokot/tracker",
+    url: "https://tracker.arnoldkokot.com/",
     description:
       "League tracker provides insight to League of Legends players about thier game performance, match history, and ranked ladder.",
   },
@@ -23,7 +23,7 @@ export const works = {
     title: "Daiji - Music bot",
     img: daijiPreview,
     tags: ["bot", "discord api"],
-    url: "https://github.com/arnoldkokot/discord-bot",
+    url: "https://daiji-bot.com",
     description:
       "Discord music bot allowing you to play YouTube videos and playlists in a voice channel using text commands.",
   },
