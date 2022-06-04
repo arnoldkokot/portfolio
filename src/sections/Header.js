@@ -41,7 +41,9 @@ export default function Header() {
         const { alias, url } = headerLinks[i];
         return (
           <Background style={styles} key={alias}>
-            <Link href={url}>{alias}</Link>
+            <Link href={url} external>
+              {alias}
+            </Link>
           </Background>
         );
       })}

@@ -41,16 +41,16 @@ export default function Hero() {
 
   return (
     <HeroContainer>
-      <animated.div style={text}>
-        <HeroHeading>
+      <HeroHeading>
+        <animated.div style={text}>
           Hi, I’m Arnold, a developer located in Cracow, currently studying
           Computer Science at AGH UST and part-time working at SMotor. I have a
           particular interest in web technologies, networking and video games.
-        </HeroHeading>
-      </animated.div>
-      <animated.div style={label}>
-        <HeroLabel>scroll down</HeroLabel>
-      </animated.div>
+        </animated.div>
+      </HeroHeading>
+      <HeroLabel>
+        <animated.div style={label}>scroll down</animated.div>
+      </HeroLabel>
     </HeroContainer>
   );
 }

@@ -14,6 +14,9 @@ export const theme = {
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
+  :root {
+    color-scheme: dark;
+  }
   * {
     box-sizing: border-box;
     margin: 0;

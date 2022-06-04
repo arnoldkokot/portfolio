@@ -1,34 +1,44 @@
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { Contact, Header, Hero, Works, Skills, Footer } from "./sections";
+import { useState, useEffect } from "react";
+import { useTransition, animated } from "@react-spring/web";
+import Layout from "./Layout";
+import { Loader, Background } from "./components";
 
 function App() {
-  return (
-    <>
-      <Parallax pages={3}>
-        <ParallaxLayer
-          sticky={{ start: 0, end: 10 }}
-          style={{ height: "130px" }}
-        >
-          <Header />
-        </ParallaxLayer>
-        <ParallaxLayer
-          offset={0}
-          speed={0.5}
-          factor={4}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-          }}
-        >
-          <Hero />
-          <Skills />
-          <Works />
-          <Contact />
-          <Footer />
-        </ParallaxLayer>
-      </Parallax>
-    </>
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const transitions = useTransition(loading, {
+    from: { position: "absolute", opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    delay: 500,
+  });
+
+  return transitions(({ opacity }, item) =>
+    item ? (
+      <animated.div
+        style={{
+          opacity: opacity.to({ range: [0.0, 1.0], output: [0, 1] }),
+        }}
+      >
+        <Loader />
+      </animated.div>
+    ) : (
+      <animated.div
+        style={{
+          opacity: opacity.to({ range: [1.0, 0.0], output: [1, 0] }),
+        }}
+      >
+        <Background lines drops />
+        <Layout />
+      </animated.div>
+    )
   );
 }
 
