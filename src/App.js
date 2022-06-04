@@ -9,15 +9,14 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
   const transitions = useTransition(loading, {
-    from: { position: "absolute", opacity: 0 },
+    from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
-    delay: 500,
   });
 
   return transitions(({ opacity }, item) =>

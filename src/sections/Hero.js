@@ -43,8 +43,8 @@ export default function Hero() {
     <HeroContainer>
       <HeroHeading>
         <animated.div style={text}>
-          Hi, I’m Arnold, a developer located in Cracow, currently studying
-          Computer Science at AGH UST and part-time working at SMotor. I have a
+          I’m Arnold, a developer located in Cracow, currently studying Computer
+          Science at AGH UST and part-time working at SMotor. I have a
           particular interest in web technologies, networking and video games.
         </animated.div>
       </HeroHeading>

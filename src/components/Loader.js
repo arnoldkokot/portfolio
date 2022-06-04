@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Heading } from ".";
-import { theme } from "../theme";
 
 const LoaderContainer = styled.div`
   position: fixed;
