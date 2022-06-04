@@ -28,3 +28,18 @@ export const works = {
       "Discord music bot allowing you to play YouTube videos and playlists in a voice channel using text commands.",
   },
 };
+
+export const headerLinks = [
+  {
+    alias: "Arnold Kokot",
+    url: "/",
+  },
+  {
+    alias: "Resume",
+    url: links.resume,
+  },
+  {
+    alias: "GitHub",
+    url: links.github,
+  },
+];

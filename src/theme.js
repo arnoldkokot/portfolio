@@ -7,8 +7,9 @@ export const theme = {
     text: "#f5f5f5",
     background: "#111111",
     border: "#ffffff1a",
-    header: "#000000",
+    drop: "#f5f5f580",
   },
+  delay: 500,
 };
 
 export const GlobalStyle = createGlobalStyle`

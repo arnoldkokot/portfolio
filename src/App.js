@@ -1,16 +1,10 @@
-import { useRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-
 import { Contact, Header, Hero, Works, Skills, Footer } from "./sections";
-import { Background } from "./components";
 
 function App() {
-  const ref = useRef();
-
   return (
     <>
-      <Background />
-      <Parallax pages={3} ref={ref}>
+      <Parallax pages={3}>
         <ParallaxLayer
           sticky={{ start: 0, end: 10 }}
           style={{ height: "130px" }}
