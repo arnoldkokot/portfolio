@@ -60,6 +60,15 @@ const Lines = styled.div`
 
   display: flex;
   justify-content: space-around;
+
+  @keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
 `;
 
 const Line = styled.span`
@@ -68,6 +77,40 @@ const Line = styled.span`
   background-color: ${({ theme }) => theme.color.border};
 
   height: 100%;
+
+  position: relative;
+`;
+
+const AnimatedLine = styled(Line)`
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      ${({ theme }) => theme.color.text} 75%,
+      ${({ theme }) => theme.color.text} 100%
+    );
+    animation: drop 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+  &:nth-child(1)::after {
+    animation-delay: 2s;
+  }
+  &:nth-child(2)::after {
+    animation-delay: 0s;
+  }
+  &:nth-child(3)::after {
+    animation-delay: 2.5s;
+  }
+  &:nth-child(4)::after {
+    animation-delay: 4.5s;
+  }
 `;
 
 export default function Background() {
@@ -75,10 +118,10 @@ export default function Background() {
     <>
       {/* <Grain /> */}
       <Lines>
-        <Line />
-        <Line />
-        <Line />
-        <Line />
+        <AnimatedLine />
+        <AnimatedLine />
+        <AnimatedLine />
+        <AnimatedLine />
       </Lines>
     </>
   );

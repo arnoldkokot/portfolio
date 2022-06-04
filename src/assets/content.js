@@ -3,7 +3,7 @@ import daijiPreview from "../assets/daiji.png";
 
 export const links = {
   resume:
-    "https://drive.google.com/file/d/1sb_Bpk7cMzPelfwiP_65Eq167rNs1_UQ/view",
+    "https://drive.google.com/file/d/1E4-1nq02IHSZMNzzQNpSH240yGyVIZU8/view",
   github: "https://github.com/arnoldkokot",
   twitter: "https://twitter.com/deithyy",
   instagram: "https://www.instagram.com/niearek",

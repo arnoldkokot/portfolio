@@ -19,7 +19,11 @@ const Background = styled.div`
 
 const Links = styled.div`
   display: flex;
-  gap: 3em;
+  gap: 1em;
+
+  @media (min-width: 1020px) {
+    gap: 3em;
+  }
 `;
 
 export default function Header() {
